@@ -10,7 +10,7 @@
         }
         button {
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 20px;
             margin: 10px;
             cursor: pointer;
         }
@@ -22,8 +22,6 @@
     <p><strong>Password:</strong> <span id="wifi-password">
 nBA4pM8jNXhF</span></p>
     <button onclick="copyPassword()">Copy Password</button>
-    <button onclick="showInstructions()">Show Wi-Fi Settings Instructions</button>
-
     <script>
         function copyPassword() {
             const password = document.getElementById("wifi-password").innerText;
@@ -32,10 +30,6 @@ nBA4pM8jNXhF</span></p>
             }).catch(err => {
                 alert("Failed to copy password: " + err);
             });
-        }
-
-        function showInstructions() {
-            alert("To connect to Wi-Fi:\n1. Go to Settings.\n2. Tap Wi-Fi.\n3. Select the network 'YourNetworkName'.\n4. Paste the password.");
         }
     </script>
 </body>
