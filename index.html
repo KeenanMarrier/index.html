@@ -43,7 +43,7 @@
     <p><strong>SSID:</strong> SKYI1HVG</p>
     <p><strong>Password:</strong> <span id="wifi-password">nBA4pM8jNXhF</span></p>
     <button onclick="copyPassword()">Copy Password</button>
-    <button onclick="showInstructions()">Show Wi-Fi Settings Instructions</button>
+    <button onclick="openWiFiSettings()">Open Wi-Fi Settings</button>
 
     <script>
         function copyPassword() {
@@ -55,8 +55,8 @@
             });
         }
 
-        function showInstructions() {
-            alert("To connect to Wi-Fi:\n1. Go to Settings.\n2. Tap Wi-Fi.\n3. Select the network 'SKYI1HVG'.\n4. Paste the password.");
+        function openWiFiSettings() {
+            window.location.href = "prefs:root=WIFI";
         }
     </script>
 </body>
